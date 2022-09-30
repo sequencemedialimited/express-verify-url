@@ -1,0 +1,52 @@
+{
+  "name": "express-verify-url",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Verify URLs for Express",
+  "main": "index.mjs",
+  "scripts": {
+    "prepare": "npx babel src -d lib --out-file-extension .cjs",
+    "lint": "cross-env NODE_ENV=production eslint . --ext .mjs --ext .cjs --ext .js",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sequencemedialimited/express-verify-url.git"
+  },
+  "keywords": [
+    "express",
+    "verify",
+    "url"
+  ],
+  "author": "Jonathan Perry for Sequence Media Limited <sequencemedia@sequencemedia.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sequencemedialimited/express-verify-url/issues"
+  },
+  "homepage": "https://github.com/sequencemedialimited/express-verify-url#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "^7.19.3",
+    "@babel/register": "^7.18.9",
+    "babel-plugin-minify-dead-code-elimination": "^0.5.2",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "core-js": "^3.25.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.24.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-import-resolver-babel-module": "^5.3.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "superagent": "^8.0.1"
+  },
+  "imports": {
+    "#src": "./src/index.mjs",
+    "#status": "./src/status.mjs"
+  }
+}
