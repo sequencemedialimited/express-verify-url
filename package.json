@@ -5,7 +5,7 @@
   "description": "Verify URLs for Express",
   "main": "index.mjs",
   "scripts": {
-    "prepare": "npx babel src -d lib --out-file-extension .cjs",
+    "prepare": "babel src -d lib --out-file-extension .cjs",
     "lint": "cross-env NODE_ENV=production eslint . --ext .mjs --ext .cjs --ext .js",
     "lint:fix": "npm run lint -- --fix"
   },
